@@ -1,9 +1,11 @@
 # Variables for List Items
-FruitsList = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango", "rhubarb"]
+FruitsList = ["apple", "banana", "cherry", "orange", "melon", "rhubarb"]
+FruitsList2 = list(("apple", "banana", "cherry", "rhubarb"))
+TropicalFruitsList = ["mango", "pineapple", "papaya"]
+TupleFruits = ("kiwi", "corn")
 NumberList = [1, 5, 7, 9, 3]
 BoolList = [True, False, False]
 AllList = ["abc", 34, True, 40, "male"]
-FruitsList2 = list(("apple", "banana", "cherry"))
 
 # Python List
 print("Start of Python List")
@@ -29,7 +31,7 @@ if "rhubarb" in FruitsList:
 
 # Change List Items
 print("Start of Change List Items")
-FruitsList[7] = "tomato"
+FruitsList[5] = "tomato"
 print(FruitsList)
 print("This list is now actually all fruits, you're welcome.")
 FruitsList[1:3] = ["blackcurrant", "watermelon"]
@@ -43,11 +45,38 @@ print(FruitsList)
 
 # Add List Items
 print("Start of Add List Items")
-
+FruitsList.append("pepper")
+print(FruitsList)
+FruitsList.insert(1, "Squash")
+print(FruitsList)
+FruitsList.extend(TropicalFruitsList)
+print(FruitsList)
+FruitsList.extend(TupleFruits)
+print(FruitsList)
 
 # Remove List Items
 print("Start of Remove List Items")
+FruitsList2.remove("rhubarb")
 
+if not "rhubarb" in FruitsList2:
+    print("Rhubarb removed for being an imposter.")
+
+print(FruitsList2)
+
+TropicalFruitsList.pop(2)
+print(TropicalFruitsList)
+
+FruitsList.pop()
+print(FruitsList)
+
+del FruitsList[1]
+
+del TupleFruits
+
+print(FruitsList)
+
+TropicalFruitsList.clear()
+print(TropicalFruitsList)
 
 # Loop Lists
 print("Start of Loop List")
