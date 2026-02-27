@@ -32,6 +32,14 @@ print("Start of Change List Items")
 FruitsList[7] = "tomato"
 print(FruitsList)
 print("This list is now actually all fruits, you're welcome.")
+FruitsList[1:3] = ["blackcurrant", "watermelon"]
+print(FruitsList)
+FruitsList[1:2] = ["blackcurrant", "watermelon"]
+print(FruitsList)
+FruitsList[1:3] = ["watermelon"]
+print(FruitsList)
+FruitsList.insert(4, "strawberries")
+print(FruitsList)
 
 # Add List Items
 print("Start of Add List Items")
