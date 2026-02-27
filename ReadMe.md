@@ -1,0 +1,1 @@
+This repository is literally just my learning of python via the W3Schools python course, please expect shitty formatting as I'm just following their course via VSCode and making slight changes to how it has some earlier stuff done, such as using import time before it teaches it if at all.
